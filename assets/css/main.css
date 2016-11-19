@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Handlee|Kaushan+Script");
+body {
+  margin: 0;
+  background-color: honeydew; }
+
+.kite {
+  width: 800px;
+  height: 922px;
+  background-image: url(../illustrations/kite.png);
+  margin: 30px auto;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .kite p {
+    position: absolute;
+    width: 350px;
+    top: 350px;
+    left: 20px;
+    text-align: center;
+    font-family: 'Handlee', cursive;
+    font-size: 25px; }
+  .kite h4 {
+    position: absolute;
+    top: 340px;
+    left: 470px;
+    font-size: 20pt;
+    animation: beacon 500ms linear 0s infinite; }
+  .kite a {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer; }
+    .kite a .balloon {
+      width: 400px;
+      height: 150px;
+      content: '';
+      background-color: rgba(47, 139, 129, 0.95);
+      display: block;
+      position: relative;
+      top: -141px;
+      left: 10px;
+      border-radius: 50px 50px 50px 0;
+      transform-origin: left bottom;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-decoration: none;
+      flex-wrap: wrap;
+      text-align: center;
+      transform: scale(0); }
+      .kite a .balloon h2, .kite a .balloon h3 {
+        text-decoration: none;
+        padding: 10px;
+        font-family: 'Handlee', cursive; }
+    .kite a:hover .balloon {
+      animation: balloon-inflate 300ms ease-in-out 0s 1;
+      animation-fill-mode: forwards; }
+  .kite a#one {
+    top: 377px;
+    left: 446px; }
+  .kite a#two {
+    top: 450px;
+    left: 473px; }
+  .kite a#three {
+    top: 524px;
+    left: 540px; }
+  .kite a#four {
+    top: 605px;
+    left: 460px; }
+  .kite a#five {
+    top: 671px;
+    left: 339px; }
+  .kite a#six {
+    top: 738px;
+    left: 372px; }
+  .kite a#seven {
+    top: 863px;
+    left: 246px; }
+  .kite a#eight {
+    top: 910px;
+    left: 148px; }
+
+@keyframes balloon-inflate {
+  0% {
+    transform: scale(0); }
+  80% {
+    transform: scale(1); }
+  90% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+@keyframes beacon {
+  0% {
+    left: 470px; }
+  100% {
+    left: 478px; } }
+ul.share-buttons {
+  list-style: none;
+  padding: 0;
+  position: absolute; }
+
+ul.share-buttons li {
+  display: inline; }
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */

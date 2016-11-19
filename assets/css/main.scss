@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee|Kaushan+Script');
+@import "bourbon/_bourbon.scss";
+body{
+  margin: 0;
+  background-color: honeydew;
+}
+
+
+  .kite{
+    width: 800px;
+    height: 922px;
+    background-image: url(../illustrations/kite.png);
+    margin: 30px auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    p{
+      position: absolute;
+      width: 350px;
+      top: 350px;
+      left: 20px;
+      text-align: center;
+      font-family: 'Handlee', cursive;
+      font-size: 25px;
+    }
+    h4{
+      position: absolute;
+      top: 340px;
+      left: 470px;
+      font-size: 20pt;
+      animation: beacon 500ms linear 0s infinite;
+      //animation-direction: alternate;
+    }
+    a{
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      border-radius: 12px;
+      text-decoration: none;
+      cursor: pointer;
+      //background-color: rgba(47, 139, 129, .95);
+      //animation: beacon 900ms ease-in-out 0s infinite;
+      //animation-fill-mode: forwards;
+      //transform: scale(3);
+      .balloon{
+        width: 400px;
+        height: 150px;
+        content: '';
+        background-color: rgba(47, 139, 129, .95);
+        display: block;
+        position: relative;
+        top: -141px;
+        left: 10px;
+        border-radius: 50px 50px 50px 0;
+        transform-origin: left bottom;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        flex-wrap: wrap;
+        text-align: center;
+        h2,h3{
+          text-decoration: none;
+          padding: 10px;
+          font-family: 'Handlee', cursive;
+        }
+        transform: scale(0);
+      }
+      &:hover .balloon{
+        animation: balloon-inflate 300ms ease-in-out 0s 1;
+        animation-fill-mode: forwards;
+      }
+    }
+    a#one{
+      top: 377px;
+      left: 446px;
+    }
+    a#two{
+      top: 450px;
+      left: 473px;
+    }
+    a#three{
+      top: 524px;
+      left: 540px;
+    }
+    a#four{
+      top: 605px;
+      left: 460px;
+    }
+    a#five{
+      top: 671px;
+      left: 339px;
+    }
+    a#six{
+      top: 738px;
+      left: 372px;
+    }
+    a#seven{
+      top: 863px;
+      left: 246px;
+    }
+    a#eight{
+      top: 910px;
+      left: 148px;
+    }
+  }
+
+ @keyframes balloon-inflate {
+   0%{
+     transform: scale(0);
+   }
+   80%{
+     transform: scale(1);
+   }
+   90%{
+     transform: scale(1.1);
+   }
+   100%{
+     transform: scale(1);
+   }
+ }
+
+@keyframes beacon {
+  0%{
+     left: 470px;
+  }
+  100%{
+     left: 478px;
+  }
+}
+//media query
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  position: absolute;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
